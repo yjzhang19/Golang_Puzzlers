@@ -45,6 +45,7 @@ func modifySlice(a []string) []string {
 
 // 示例3。
 func modifyComplexArray(a [3][]string) [3][]string {
+	//若是修改数组中的切片的某个元素，会影响原数组。若是修改数组的某个元素即a[1]=[]string{"x"}就不会影响原数组。
 	a[1][1] = "s"
 	a[2] = []string{"o", "p", "q"}
 	return a
